@@ -1,0 +1,11 @@
+<h4>ngClass</h4>
+
+<h1>
+    <i
+        [ngClass]="{
+            'ion-ios7-star': meu_favorito,
+            'ion-ios7-star-outline': !meu_favorito
+        }"
+        (click)="onClick()"
+    ></i>
+</h1>

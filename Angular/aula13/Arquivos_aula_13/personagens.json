@@ -1,0 +1,12 @@
+[{
+  "name": "luke skywalker",
+  "height": "172",
+  "gender": "male",
+  "created": "2014-12-09T13:50:51.644000Z",
+},
+{
+  "name": "darth vader",
+  "height": "202",
+  "gender": "male",
+  "created": "2014-12-20T13:50:51.644000Z",
+}]
