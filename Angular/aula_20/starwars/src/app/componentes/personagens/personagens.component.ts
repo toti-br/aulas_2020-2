@@ -11,11 +11,10 @@ export class PersonagensComponent implements OnInit {
   personagens: any = [];
 
   constructor(personagensServ: PersonagensService) { 
-
-    // this.personagens = personagensServ.getTodos();
-
-    personagensServ.getTodos()
-    .subscribe(personagens => this.personagens = personagens['results']);
+    personagensServ.getTodos().subscribe(personagens => {
+      this.personagens = personagens['results']
+      console.log(personagens)
+    });
   }
 
   ngOnInit(): void {

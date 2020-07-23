@@ -21,21 +21,12 @@ export class PersonagensService {
   //   "price": "49.99",
   //   "rating": "4.8433",
   // }];
-  //   "gender": "male",
-  //   "created": "2014-12-20T13:50:51.644000Z",
-  //   "price": "49.99",
-  //   "rating": "4.8433",
-  // }];
+
+  personagens: any = [];
 
   constructor(private http: HttpClient) { }
 
   getTodos() {
-    // return this.personagens;
-
     return this.http.get('https://swapi.dev/api/people/');
-  }
-
-  getPersonagem(id) {
-    return this.http.get('https://swapi.dev/api/people/'+id);
   }
 }

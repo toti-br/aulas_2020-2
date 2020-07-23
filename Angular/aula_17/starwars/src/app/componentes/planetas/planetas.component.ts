@@ -12,7 +12,10 @@ export class PlanetasComponent implements OnInit {
   planetas: any = [];
 
   constructor(planetasServ: PlanetasService) {
-    this.planetas = planetasServ.getTodos();
+    // this.planetas = planetasServ.getTodos();
+
+    planetasServ.getTodos()
+    .subscribe(planetas => this.planetas = planetas['results']);
   }
 
   ngOnInit(): void {
