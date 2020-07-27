@@ -1,0 +1,7 @@
+<div *ngFor="let usuario of usuarios">
+	<b>ID: </b>{{ usuario.id }}<br>
+	<b>Nome: </b>{{ usuario.name }}<br>
+	<b>Email: </b>{{ usuario.email }}<br>
+	<b>Endereço: </b>{{ usuario.address.street +', '+ usuario.address.suite +', '+ usuario.address.city }}<br>
+	<hr>
+</div>
