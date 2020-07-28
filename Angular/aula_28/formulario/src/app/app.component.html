@@ -1,0 +1,38 @@
+<div class="login-box">
+	<h2>Busca de endereço</h2>
+	<form #nossoForm="ngForm" (ngSubmit)="onSubmit(nossoForm)">
+		<div class="user-box">
+			<input type="text" name="zipcode" required ngModel>
+			<label>CEP</label>
+		</div>
+
+		
+		<button type="submit">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>Buscar
+		</button>
+
+		<div class="user-box">
+			<input type="text" name="logradouro" readonly placeholder="Logradouro (rua)" [(ngModel)]="endereco.logradouro">
+		</div>
+
+		<div class="user-box">
+			<input type="text" name="complemento" placeholder="Complemento" readonly [(ngModel)]="endereco.complemento">
+		</div>
+
+		<div class="user-box">
+			<input type="text" name="bairro" placeholder="Bairro" readonly [(ngModel)]="endereco.bairro">
+		</div>
+
+		<div class="user-box">
+			<input type="text" name="localidade" placeholder="Localidade (cidade)" readonly [(ngModel)]="endereco.localidade">
+		</div>
+
+		<div class="user-box">
+			<input type="text" name="uf" placeholder="UF (estado)" readonly [(ngModel)]="endereco.uf">
+		</div>
+
+	</form>
+</div>

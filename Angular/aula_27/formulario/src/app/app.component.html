@@ -1,0 +1,17 @@
+<div class="login-box">
+	<h2>Busca de endereço</h2>
+	<form #nossoForm="ngForm" (ngSubmit)="onSubmit(nossoForm)">
+		<div class="user-box">
+			<input type="text" name="zipcode" required ngModel>
+			<label>CEP</label>
+		</div>
+
+		
+		<button type="submit">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>Buscar
+		</button>
+	</form>
+</div>
