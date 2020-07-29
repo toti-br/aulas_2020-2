@@ -1,0 +1,22 @@
+<section>
+    <article>
+        <h3>Interpolação (Bigodinho :P)</h3>
+        <p>String realizada com interpolação: {{ url }}</p>
+        <p>Resultado de 1+1 é:  {{ 1 + 1 }}</p>
+        <p>Resultado de 1+1 não é:  {{ 1 + 1 + getValor() }}</p>
+    </article>
+
+    <article>
+        <h3>Binding de propriedade</h3>
+
+        <!-- Interpolação -->
+        <img src="{{ urlImagem }}">
+        
+        <!-- binding de propriedade -->
+        <img [src]="urlImagem">
+        
+        <br>
+		<label>Nome do curso:</label>
+		<input type="text" [value]="nome_curso">
+    </article>
+</section>

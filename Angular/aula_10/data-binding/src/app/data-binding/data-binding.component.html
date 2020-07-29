@@ -1,0 +1,76 @@
+<section>
+    <!-- <article>
+        <h3>Interpolação (Bigodinho :P)</h3>
+        <p>String realizada com interpolação: {{ url }}</p>
+        <p>Resultado de 1+1 é:  {{ 1 + 1 }}</p>
+        <p>Resultado de 1+1 não é:  {{ 1 + 1 + getValor() }}</p>
+    </article>
+
+    <article>
+        <h3>Binding de propriedade</h3>
+
+        <img src="{{ urlImagem }}">
+        <img [src]="urlImagem">
+        
+        <br>
+		<label>Nome do curso:</label>
+		<input type="text" [value]="nome_curso">
+    </article> -->
+
+    <!-- <article>
+        <h3>Class e Style Binding</h3>
+
+        Selecione uma classe:
+
+        <select #classe (change)="0">
+            <option value="verde">Verde</option>
+            <option value="azul">Azul</option>
+            <option value="vermelho">Vermelho</option>
+            <option value="laranja">Laranja</option>
+        </select>
+
+        <br><br>
+
+        A classe selecionada é: {{ classe.value }}
+
+        <p [class]="classe.value" [style]="{'font-weight': 'bold', 'font-size': '30px'}">Um texto para ser colorido</p>
+
+        <p [style.display] = "classe.value == 'vermelho' ? 'block' : 'none'" [class]="classe.value">
+            MEU DEUS! VOCÊ ESCOLHEU VERMELHO!
+        </p>
+    </article> -->
+
+    <article>
+        <h3>Event bind (Observando eventos :D)</h3>
+
+        <button (click)="botaoClicado()">Me clique!</button>
+
+        <br><br>
+
+        <input type="text" #meuCampo 
+        (keyup)="onKeyUp(meuCampo.value)"
+        (keyup.enter)="salvarValor(meuCampo.value)"
+        (blur)="saiuDoCampo()">
+
+        <p>Campo texto: {{ campo_texto }}</p>
+        <p>Valor salvo: {{ valor_salvo }}</p>
+
+        <br><br>
+
+        <p (mouseover)="passeiMouse()">Passe o mouse sobre mim!</p>
+
+        <br><br>
+
+        <select #nomes (change)="valorSelecionado(nomes.value)">
+            <option value=""></option>
+            <option value="Stella">Stella</option>
+            <option value="Leonardo">Leonardo</option>
+            <option value="Paulo">Paulo</option>
+            <option value="João">João</option>
+            <option value="Augusto">Augusto</option>
+        </select>
+        
+        <br><br>
+        Nome selecionado: {{ nome }}
+    </article>
+</section>
