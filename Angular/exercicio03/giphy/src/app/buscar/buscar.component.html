@@ -1,0 +1,15 @@
+<div class="s01">
+  <form #nossoForm="ngForm" (ngSubmit)="buscar(nossoForm.form)">
+    <fieldset>
+      <legend>Buscador de imagens</legend>
+    </fieldset>
+    <div class="inner-form">
+      <div class="input-field first-wrap">
+        <input id="search" type="text" placeholder="O que você está procurando?" name="termo" [(ngModel)]="termo" />
+      </div>
+      <div class="input-field third-wrap">
+        <button class="btn-search" type="submit">Buscar</button>
+      </div>
+    </div>
+  </form>
+</div>
